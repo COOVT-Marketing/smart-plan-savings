@@ -1,0 +1,28 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/privacy-policy", "destination": "/final-expense/privacy", "permanent": true },
+    { "source": "/privacy-policy.html", "destination": "/final-expense/privacy", "permanent": true },
+    { "source": "/terms-of-service", "destination": "/final-expense/terms", "permanent": true },
+    { "source": "/terms-of-service.html", "destination": "/final-expense/terms", "permanent": true },
+    { "source": "/do-not-sell", "destination": "/final-expense/do-not-sell", "permanent": true },
+    { "source": "/call-now", "destination": "/final-expense/call-now", "permanent": true },
+    { "source": "/call-now/", "destination": "/final-expense/call-now", "permanent": true },
+    { "source": "/contact", "destination": "/final-expense/contact", "permanent": true },
+    { "source": "/advertiser-disclosure", "destination": "/final-expense/advertiser-disclosure", "permanent": true },
+    { "source": "/partner-network", "destination": "/final-expense/partner-network", "permanent": true },
+    { "source": "/finalexpense", "destination": "/final-expense", "permanent": true },
+    { "source": "/finalexpense/:path*", "destination": "/final-expense/:path*", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+      ]
+    }
+  ]
+}

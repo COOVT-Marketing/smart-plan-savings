@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Plan Savings</title>
+  <meta name="description" content="Smart Plan Savings — Final Expense and Auto insurance quote requests." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0c1929;
+      --teal: #2dd4bf;
+      --fe: #1e332c;
+      --muted: #64748b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(165deg, #0c1929 0%, #152a45 50%, #1a3344 100%);
+      color: #f1f5f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem;
+    }
+    .wrap { max-width: 520px; width: 100%; text-align: center; }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      color: #fff;
+    }
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+    .brand span {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .brand span em {
+      font-style: normal;
+      color: var(--teal);
+      font-weight: 800;
+    }
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 1.85rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+    .sub {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    a.card {
+      display: block;
+      padding: 1.25rem 1.35rem;
+      border-radius: 14px;
+      text-decoration: none;
+      text-align: left;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    a.card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+    }
+    a.card.fe {
+      background: var(--fe);
+      color: #fff;
+    }
+    a.card.auto {
+      background: #132337;
+      color: #fff;
+      border-color: rgba(45, 212, 191, 0.25);
+    }
+    a.card strong {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    a.card span {
+      font-size: 0.85rem;
+      opacity: 0.75;
+      line-height: 1.4;
+    }
+    a.card .arrow {
+      float: right;
+      margin-top: 0.15rem;
+      opacity: 0.6;
+      font-size: 1.1rem;
+    }
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.75rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/img/logo.png" width="48" height="48" alt="Smart Plan Savings" />
+      <span>SmartPlan <em>Savings</em></span>
+    </a>
+    <h1>How can we help?</h1>
+    <p class="sub">Choose a product to request a quote or speak with a licensed agent.</p>
+    <div class="cards">
+      <a class="card fe" href="/final-expense">
+        <span class="arrow">→</span>
+        <strong>Final Expense Insurance</strong>
+        <span>Life coverage options for final expenses. Request a quote online.</span>
+      </a>
+      <a class="card auto" href="/auto">
+        <span class="arrow">→</span>
+        <strong>Auto Insurance</strong>
+        <span>Car insurance quotes, including SR-22 options. Call or request online.</span>
+      </a>
+    </div>
+    <footer>© Smart Plan Savings. Licensed agents. Not an insurance company.</footer>
+  </div>
+</body>
+</html>

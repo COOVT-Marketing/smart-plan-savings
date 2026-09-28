@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>Call Now - Final Expense Insurance | Smart Plan Savings</title>
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="apple-touch-icon" href="/img/logo.png" />
+
+  <meta name="description" content="Speak with a licensed agent about final expense life insurance. Click to call now. Free service, no obligation.">
+  <meta name="theme-color" content="#1e332c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --paper:#f2efe8;--paper-2:#e8e2d6;--ink:#1c1917;--ink-soft:#3f3a34;--muted:#6b645b;
+  --pine:#1e332c;--pine-deep:#15241f;--pine-mid:#2c4a40;
+  --oxblood:#7a3226;--oxblood-hover:#63281e;
+  --card:#fcfbf7;--line:#ddd6c8;
+  --banner:#f3ead4;--banner-ink:#5c4a22;--ad:#efe6d6;--ad-ink:#5a4630;
+  --display:"Cormorant Garamond",Georgia,serif;
+  --sans:"Figtree","Segoe UI",system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6}
+a{color:var(--pine)}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;line-height:1.15}
+p{text-wrap:pretty}
+:focus-visible{outline:3px solid var(--pine-mid);outline-offset:3px}
+
+.skip{position:absolute;left:16px;top:-80px;z-index:50;background:var(--oxblood);color:var(--paper);padding:10px 16px;text-decoration:none}
+.skip:focus{top:16px}
+
+.site-header{display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 24px;background:var(--pine);color:var(--paper)}
+.wordmark{font-family:var(--display);font-size:1.35rem;font-weight:600;color:var(--paper);text-decoration:none}
+.header-cta{display:inline-flex;align-items:center;height:40px;padding:0 16px;background:var(--oxblood);color:var(--paper);text-decoration:none;font-size:13px;font-weight:600;border-radius:6px}
+.header-cta:hover{background:var(--oxblood-hover)}
+
+.banner{padding:8px 16px;text-align:center;font-size:12px;font-weight:500;line-height:1.45}
+.banner-gov{background:var(--banner);color:var(--banner-ink);border-bottom:1px solid #e4d4a8}
+.banner-ad{background:var(--ad);color:var(--ad-ink);border-bottom:1px solid var(--line)}
+.banner a{color:inherit}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+.hero-call{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,22rem);
+  gap:48px;
+  align-items:center;
+  padding:64px 0 72px;
+  min-height:calc(100vh - 180px);
+}
+.hero-copy .kicker{
+  display:inline-block;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--pine-mid);
+  margin-bottom:20px;
+  border-bottom:2px solid var(--pine-mid);
+  padding-bottom:6px;
+}
+.hero-copy h1{
+  font-size:clamp(2.4rem,5vw,3.4rem);
+  color:var(--pine);
+  margin-bottom:8px;
+}
+.hero-copy h1 em{
+  font-style:italic;
+  color:var(--pine-mid);
+  display:block;
+}
+.hero-copy .lede{
+  font-size:1.08rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  max-width:28rem;
+  margin:18px 0 28px;
+}
+.btn-call{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  height:50px;
+  padding:0 22px;
+  background:var(--oxblood);
+  color:var(--paper);
+  border:0;
+  border-radius:8px;
+  font-size:15px;
+  font-weight:700;
+  cursor:pointer;
+  text-decoration:none;
+  font-family:var(--sans);
+}
+.btn-call:hover{background:var(--oxblood-hover)}
+.btn-call svg{width:18px;height:18px;fill:currentColor}
+
+.call-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:28px 24px;
+  box-shadow:0 8px 28px rgba(28,25,23,.06);
+}
+.call-card .label{
+  display:inline-block;
+  border:1px solid var(--line);
+  background:var(--card);
+  padding:4px 12px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--pine-mid);
+  margin-bottom:14px;
+}
+.call-card h2{
+  font-family:var(--display);
+  font-size:1.55rem;
+  color:var(--pine);
+  margin-bottom:10px;
+}
+.call-card > p,
+.call-card-body p{
+  font-size:15px;
+  color:var(--ink-soft);
+  line-height:1.65;
+  margin-bottom:20px;
+}
+.btn-quote{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  width:100%;
+  height:52px;
+  background:var(--oxblood);
+  color:var(--paper);
+  border:0;
+  border-radius:8px;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.03em;
+  cursor:pointer;
+  text-decoration:none;
+  font-family:var(--sans);
+}
+.btn-quote:hover{background:var(--oxblood-hover)}
+.call-perks{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:12px}
+.call-perks li{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  font-size:15px;
+  color:var(--ink-soft);
+}
+.call-perks .check{
+  flex-shrink:0;
+  width:22px;height:22px;
+  border-radius:50%;
+  background:var(--pine);
+  color:var(--paper);
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;
+}
+
+.section{padding:48px 0}
+.section.alt{background:var(--paper-2)}
+.disc-wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.disc h3{font-family:var(--sans);font-size:14px;margin-bottom:8px}
+.disc p{font-size:13.5px;color:var(--ink-soft)}
+
+.site-footer{background:var(--pine-deep);color:rgba(242,239,232,.7);font-size:12px;line-height:1.7;padding:40px 24px;text-align:center}
+.site-footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:18px}
+.site-footer a{color:rgba(242,239,232,.85);text-decoration:none}
+.site-footer a:hover{color:#fff}
+.legal-copy{max-width:52rem;margin:0 auto}
+
+.hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+
+@media (max-width:900px){
+  .hero-call{grid-template-columns:1fr;padding:40px 0 56px;gap:36px;min-height:auto}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#call-now">Skip to main content</a>
+
+  <header>
+    <div class="site-header">
+      <a class="wordmark" href="/">Smart Plan Savings</a>
+      <a class="header-cta" href="#call-now">Call now</a>
+    </div>
+    <div class="banner banner-gov" role="note">
+      Not affiliated with or endorsed by the U.S. Government or any federal program. We are a marketing and lead generation company, not an insurance carrier, agent, or broker.
+    </div>
+    <div class="banner banner-ad">
+      Advertiser disclosure: Smart Plan Savings may receive compensation from partner agents. We do not guarantee rates, savings, or coverage.
+      <a href="/advertiser-disclosure.html">Full disclosure</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero-call" id="call-now" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker">5 days a week, a real agent answers</p>
+          <h1 id="hero-title">Talk to an agent.<em>Right now.</em></h1>
+          <p class="lede">
+            Get an actual person on the phone who can walk you through your options — no typing, no waiting on an email back.
+          </p>
+          <button type="button" class="btn-call" id="btn-call-left" aria-label="Call now">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.4 21 3 13.6 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+            Call Now
+          </button>
+        </div>
+
+        <div class="call-card">
+          <p class="label">Phone quote</p>
+          <h2>Talk to a Licensed Agent</h2>
+          <p>One call gets you someone who can answer questions and pull quotes while you’re on the line.</p>
+          <button type="button" class="btn-quote" id="btn-call-right">
+            CLICK HERE TO GET A QUOTE! →
+          </button>
+          <ul class="call-perks">
+            <li><span class="check" aria-hidden="true">✓</span> Talk to someone who knows your state’s carriers</li>
+            <li><span class="check" aria-hidden="true">✓</span> Licensed agents available 5 days a week</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <div class="hp" aria-hidden="true">
+      <input type="hidden" id="xxTrustedFormCertUrl" name="xxTrustedFormCertUrl" value="">
+      <input type="hidden" id="xxTrustedFormPingUrl" name="xxTrustedFormPingUrl" value="">
+      <input type="hidden" id="xxTrustedFormToken" name="xxTrustedFormToken" value="">
+      <input type="hidden" id="ip_address" name="ip_address" value="">
+      <input type="hidden" id="landing_page_url" name="landing_page_url" value="">
+      <input type="hidden" id="page_url" name="page_url" value="">
+    </div>
+
+    <section class="section alt">
+      <div class="wrap disc-wrap">
+        <div class="disc">
+          <h3>About Smart Plan Savings</h3>
+          <p>Smart Plan Savings is a marketing and lead generation company. We are not an insurance agency, carrier, or broker. We connect consumers with independently licensed agents in our partner network.</p>
+        </div>
+        <div class="disc">
+          <h3>Advertiser disclosure</h3>
+          <p>We may receive compensation from partner agents when consumers are connected through our platform. Compensation can influence which agents we introduce. <a href="/advertiser-disclosure.html">Read the full disclosure</a>.</p>
+        </div>
+        <div class="disc">
+          <h3>Your information</h3>
+          <p>This page does not collect a form. Clicking Call Now may place a call and may record limited technical data (page URL, TrustedForm certificate, IP) for compliance. Read the <a href="/privacy-policy.html">Privacy Policy</a>, <a href="/terms-of-service.html">Terms of Service</a>, and <a href="/do-not-sell.html">Do Not Sell or Share</a> page.</p>
+        </div>
+        <div class="disc">
+          <h3>Call recording notice</h3>
+          <p>If you are connected with an agent, that call may be recorded for quality assurance and compliance purposes. If you are located in California, Florida, Pennsylvania, Illinois, Washington, or another state requiring all-party consent for recording, remaining on the call constitutes your consent.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <nav>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/terms-of-service.html">Terms of Service</a>
+      <a href="/advertiser-disclosure.html">Advertiser Disclosure</a>
+      <a href="/do-not-sell.html">Do Not Sell or Share</a>
+      <a href="/partner-network.html">Partner Network</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <div class="legal-copy">
+      <p>© 2026 Smart Plan Savings. All rights reserved. Not affiliated with or endorsed by the U.S. Government or the Federal Medicare program. Smart Plan Savings is a marketing and lead generation company only. We are not an insurance agency, carrier, or broker. Licensed agents in our partner network are independent professionals.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var tf = document.createElement("script");
+      tf.async = true;
+      tf.src = "https://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&use_tagged_consent=true&l=" + new Date().getTime() + Math.random();
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(tf, s);
+    })();
+  </script>
+
+  <script>
+  (function () {
+    var CALL_NOW_NUMBER = "13152703777";
+    var SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbz-vS8Twpb_qA_tATWzuFTclVa0fpRrvpnJPCVyPhswB0ru1SoLdvRWa0YH750sYSU/exec";
+
+    var land = document.getElementById("landing_page_url");
+    var pageUrl = document.getElementById("page_url");
+    if (land) land.value = window.location.href;
+    if (pageUrl) pageUrl.value = window.location.href;
+
+    var ipReady = false;
+    function setIp(v) {
+      var el = document.getElementById("ip_address");
+      if (!el || !v) return;
+      el.value = String(v).replace(/\s/g, "");
+      if (el.value) ipReady = true;
+    }
+    function readJson(r) { return r.json(); }
+    function fetchIp() {
+      return fetch("/api/ip", { cache: "no-store" })
+        .then(readJson)
+        .then(function (d) {
+          if (d && d.ip) { setIp(d.ip); return; }
+          throw new Error("empty");
+        })
+        .catch(function () {
+          return fetch("https://api.ipify.org?format=json", { cache: "no-store" })
+            .then(readJson)
+            .then(function (d) { if (d && d.ip) setIp(d.ip); });
+        })
+        .catch(function () {
+          return fetch("https://api64.ipify.org?format=json", { cache: "no-store" })
+            .then(readJson)
+            .then(function (d) { if (d && d.ip) setIp(d.ip); });
+        })
+        .catch(function () {});
+    }
+    fetchIp();
+
+    function syncTf() {
+      var certEl = document.getElementById("xxTrustedFormCertUrl");
+      if (!certEl) return;
+      if (window.trustedForm && window.trustedForm.id) {
+        certEl.value = "https://cert.trustedform.com/" + window.trustedForm.id;
+      }
+      var tokenEl = document.getElementById("xxTrustedFormToken");
+      if (tokenEl && window.trustedForm && window.trustedForm.id) {
+        tokenEl.value = window.trustedForm.id;
+      }
+    }
+    setInterval(syncTf, 300);
+
+    function collectPayload() {
+      syncTf();
+      return {
+        submitted_at: new Date().toISOString(),
+        first_name: "",
+        last_name: "",
+        phone: "",
+        email: "",
+        zip_code: "",
+        state: "",
+        age_range: "",
+        xxTrustedFormCertUrl: (document.getElementById("xxTrustedFormCertUrl") || {}).value || "",
+        xxTrustedFormToken: (document.getElementById("xxTrustedFormToken") || {}).value || "",
+        xxTrustedFormPingUrl: (document.getElementById("xxTrustedFormPingUrl") || {}).value || "",
+        landing_page_url: window.location.href,
+        page_url: window.location.href,
+        user_agent: navigator.userAgent || "",
+        ip_address: (document.getElementById("ip_address") || {}).value || "",
+        sheet_name: "Call Now"
+      };
+    }
+
+    function postToSheet(data) {
+      return fetch(SHEET_ENDPOINT, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(data)
+      }).catch(function () {});
+    }
+
+    function dialNow() {
+      var digits = String(CALL_NOW_NUMBER).replace(/\D/g, "");
+      if (!digits) return;
+      window.location.href = "tel:+" + digits;
+    }
+
+    function handleClick(e) {
+      if (e) e.preventDefault();
+      syncTf();
+      postToSheet(collectPayload());
+      setTimeout(dialNow, 250);
+    }
+
+    var left = document.getElementById("btn-call-left");
+    var right = document.getElementById("btn-call-right");
+    if (left) left.addEventListener("click", handleClick);
+    if (right) right.addEventListener("click", handleClick);
+  })();
+  </script>
+</body>
+</html>
